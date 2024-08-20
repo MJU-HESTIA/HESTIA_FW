@@ -82,8 +82,8 @@ void loop() {
     if (dataFromPi == "tv_on"){
       IrSender.sendNEC(saddress, sCommand, sRepeats);
     }
-    else if (dataFromPi == "airconditioner_on"){
-      IrSender.sendNEC(saddress, sCommand, sRepeats);
+    else if (dataFromPi == "fan_on"){
+      IrSender.sendNEC(0x0, 0x45, sRepeats);
     }
     else if (dataFromPi == "airpurifier_on"){
       IrSender.sendNEC(saddress, sCommand, sRepeats);
@@ -91,8 +91,8 @@ void loop() {
     else if (dataFromPi == "tv_off"){
       IrSender.sendNEC(saddress, sCommand, sRepeats);
     }
-    else if (dataFromPi == "airconditioner_off"){
-      IrSender.sendNEC(saddress, sCommand, sRepeats);
+    else if (dataFromPi == "fan_off"){
+      IrSender.sendNEC(0x0, 0x47, sRepeats);
     }
     else if (dataFromPi == "airpurifier_off"){
       IrSender.sendNEC(saddress, sCommand, sRepeats);
