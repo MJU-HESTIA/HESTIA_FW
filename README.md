@@ -5,7 +5,7 @@ Jetson Orin Nano와 UART로 연결되어 ① 실내 센서 값을 주기적으�
 
 > **English summary** — Firmware for an ESP32 (LOLIN D32-based carrier board). `sub_esp.ino` (Arduino-ESP32) periodically sends DHT11 temperature and digital gas / light readings to the Jetson over UART2 (9600 8N1, `<T^v>/<G^v>/<L^v>`), and turns text commands from the Jetson into IR NEC codes (fan uses real codes 0x45/0x47; TV / air purifier / LED are placeholders). A separate Bluetooth SPP path controls the air conditioner via IR (LG protocol) and an LED on GPIO32. `face_tracking_with_servo.c` is an ESP-WHO based 2-axis servo face-tracking experiment.
 
-<!-- 데모 영상 링크: 확인 후 주석 해제 — https://www.youtube.com/watch?v=fuKamIi-SM0 -->
+🎬 **데모 영상:** [HESTIA 시연 (YouTube)](https://www.youtube.com/watch?v=fuKamIi-SM0)
 
 ## 1. 시스템 구성
 
