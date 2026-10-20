@@ -1,0 +1,13 @@
+# ESP-IDF / PlatformIO / Arduino
+build/
+.pio/
+sdkconfig.old
+managed_components/
+*.bin
+*.elf
+*.map
+# Secrets (Wi-Fi 등)
+secrets.h
+credentials.h
+.DS_Store
+.vscode/
