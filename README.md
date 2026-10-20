@@ -38,7 +38,7 @@ flowchart LR
 | `sub_esp.ino` | ESP32 (LOLIN D32 기반, HESTIA_PCB 회로도 기준) | Arduino-ESP32 | 센서 주기 송신, UART/Bluetooth 명령 → IR·GPIO 제어 |
 | `face_tracking_with_servo.c` | ESP-WHO 카메라 보드 (모델 확인 필요) | ESP-IDF + ESP-WHO | 얼굴 검출 bbox로 2축 SG90 서보(MCPWM 50 Hz) 추적 — 실험 코드 |
 
-> MCU 표기: 회로도(HESTIA_PCB)는 **LOLIN D32(ESP32-WROOM-32)**, `sub_esp.ino`는 Classic Bluetooth(`BluetoothSerial`)를 사용하므로 **ESP32-S3가 아닌 ESP32**에서 빌드되는 코드입니다. 조직 프로필 README의 하드웨어 목록에는 "ESP32-S3 DEV Module"이 적혀 있으나, 이를 필요로 하는 코드는 없습니다. ESP32-S3가 얼굴 추적(ESP-WHO)용 별도 보드였는지는 확인이 필요합니다.
+> MCU 표기: 회로도(HESTIA_PCB)는 **LOLIN D32(ESP32-WROOM-32)**, `sub_esp.ino`는 Classic Bluetooth(`BluetoothSerial`)를 사용하므로 **ESP32-S3가 아닌 ESP32**에서 빌드되는 코드입니다. ESP32는 IoT 가전 제어와 센서 통합(온도·가스·조도, IR 송신, Jetson UART 연동)을 담당합니다.
 
 ## 2. 핀맵 (`sub_esp.ino`)
 
